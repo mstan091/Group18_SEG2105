@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="uOtt.seg.mealer.activities.RegisterClientActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/activity_register"
+        android:layout_width="409dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAddClient2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="64dp"
+        android:text="Regist"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvVoidCheck"
+        android:layout_width="161dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Load a Void Check Here :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCookDescription" />
+
+
+    <EditText
+        android:id="@+id/etCookDescription"
+        android:layout_width="365dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:drawable/alert_light_frame"
+        android:ems="10"
+        android:inputType="textPostalAddress|textMultiLine"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="horizontal|vertical"
+        android:singleLine="false"
+        android:textAlignment="viewStart"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCookDesc"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="352dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvVoidCheck"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/btnLoad"
+        android:layout_width="98dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="36dp"
+        android:text="Load"
+        app:layout_constraintStart_toEndOf="@+id/tvVoidCheck"
+        app:layout_constraintTop_toBottomOf="@+id/etCookDescription" />
+
+    <TextView
+        android:id="@+id/tvCookDesc"
+        android:layout_width="140dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="340dp"
+        android:text="Cook Description :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
